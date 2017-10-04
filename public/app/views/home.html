@@ -1,0 +1,180 @@
+		<style type="text/css">
+			.profile-circle {
+			width: 250px;
+			height: 250px;
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center center;
+			-webkit-border-radius: 99em;
+			-moz-border-radius: 99em;
+			border-radius: 99em;
+			border: 1px solid #eee;
+			vertical-align: middle;
+			}
+
+.panel-heading{
+	text-transform: capitalize;
+	font-family: 'Montserrat', sans-serif;
+	/*color:#bf1111;*/
+	background-color: #ffffff;
+}
+
+.panel-heading span{
+font-family: 'News Cycle', sans-serif;
+font-size: 14px;
+}
+		</style>
+<link href="https://fonts.googleapis.com/css?family=Droid+Sans|Fjalla+One|Inconsolata|Merriweather|Montserrat|Noto+Serif|News+Cycle|Roboto+Mono|Ubuntu" rel="stylesheet">
+
+
+<div class="container">
+  <br>
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <!-- <li data-target="#myCarousel" data-slide-to="2"></li> -->
+      <!-- <li data-target="#myCarousel" data-slide-to="3"></li> -->
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+
+      <div class="item active">
+	        <img class="banner" src="https://firebasestorage.googleapis.com/v0/b/kings-and-queens-choir.appspot.com/o/Banner%20Images%2FFB_IMG_1507064773678.jpg?alt=media&token=50d0da62-3ee5-4962-a1ed-4cb5a424b3fe" alt="Flower" width="460" height="345">
+	      <div class="carousel-caption">
+	      <!--   <h3>Flowers</h3>
+	        <p>Beatiful flowers in Kolymbari, Crete.</p> -->
+	      </div>
+      </div>
+
+      <div class="item">
+	        <img class="banner" src="https://firebasestorage.googleapis.com/v0/b/kings-and-queens-choir.appspot.com/o/Banner%20Images%2FFB_IMG_1507064819303.jpg?alt=media&token=68576749-c89b-48d7-9626-6c701febe77c" alt="Flower" width="460" height="345">
+	      <div class="carousel-caption">
+	      <!--   <h3>Flowers</h3>
+	        <p>Beatiful flowers in Kolymbari, Crete.</p> -->
+	      </div>
+      </div>
+
+    </div>
+
+    <!-- Left and right controls -->
+<!--     <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a> -->
+  </div>
+</div>
+
+	<main class="main-content">
+		<div ng-controller="ExecutiveController" id="executives" class="fullwidth-block">
+					<div class="container" style="text-align: center">
+						<h2 class="section-title">THE CHOIR EXECUTIVES</h2>
+
+							<div class="row">   
+								<div ng-repeat ="exco in executives" class="col-md-3 col-sm-6">
+									<div class="news">
+										<image class="profile-circle" src="{{exco.imageUrl}}.jpg" alt="{{exco.FirstName}}"></image><br>
+										<br>
+							
+										<h3 style="text-transform: none; margin-bottom: auto;" class="exco-name"><a ui-sref="choristers.profile({id: exco.id})">{{exco.LastName}} {{exco.FirstName}}</a></h3>
+										<h5 class="exco-title"><i>{{exco.Status}}</i></h5>
+									</div>
+								</div>
+
+							</div> <!-- .row -->
+				     </div> <!-- .container -->
+			</div> <!-- section -->
+
+			<div class="fullwidth-block">
+				<div class="container">
+					<div class="row">
+							<div ng-controller="EventController" class="col-md-6">
+									<h2 class="section-title">Events</h2>
+
+									 <div class="panel-group" id="accordion">
+									    <div ng-repeat="event in events" class="panel">
+									      <div class="panel-heading">
+									        <h4 class="panel-title">
+									        <img src="icons/calendar.svg" height="20px"/> &nbsp;
+									          <a data-toggle="collapse" data-parent="#accordion" href="#collapse{{event.id}}">{{event.title}}
+									             <span class="pull-right"> &nbsp;{{event.date}}</span>
+									        <!--    <img class="pull-right" src="icons/calendar.svg" height="20px"/> -->
+									          </a>
+									        </h4>
+									      </div>
+									      <div id="collapse{{event.id}}"  ng-class="{'panel-collapse collapse in': event.id===1, 'panel-collapse collapse':event.id!=1}">
+									        <div class="panel-body">{{event.details}}</div>
+									        <div class="panel-footer">
+											<img src="icons/placeholder-point.svg" height="18px"/>&nbsp; {{event.venue}}
+											  <span class="pull-right"> &nbsp;{{event.time}}</span>
+									           <img class="pull-right" src="icons/clock.svg" height="18px"/>
+									        </div>
+									      </div>
+									    </div>
+									 </div>
+											
+
+							</div>
+							<div class="col-md-6">
+								<h2 class="section-title">Recorded Songs</h2>
+								<ul class="seremon-list">
+									<li>
+										<img src="icons/compact-disc.svg" alt="" height="55px">
+										<div class="seremon-detail">
+											<h3 class="seremon-title">Mo K'Alleluyah</h3>
+											<div class="seremon-meta">
+												<audio controls preload="metadata"> 
+												  <source src="/songs/track1.MP3">
+												</audio>
+												<div class="pastor"><a href="/songs/track1.MP3" download="Mo K'Alleluyah"><i class="fa fa-download"></i>Download</a></div>
+											</div>
+										</div>
+									</li>
+									<li>
+										<img src="icons/compact-disc.svg" alt="" height="55px">
+										<div class="seremon-detail">
+											<h3 class="seremon-title">Psalm 91 (Afro Beat)</h3>
+											<div class="seremon-meta">
+												<audio controls preload="metadata"> 
+												  <source src="/songs/track2.MP3">
+												</audio>
+												<div class="pastor"><a href="/songs/track2.MP3" download="Psalm 91 (Afro Beat)"><i class="fa fa-download"></i>Download</a></div>
+											</div>
+										</div>
+									</li>
+									<li>
+										<img src="icons/compact-disc.svg" alt="" height="55px">
+										<div class="seremon-detail">
+											<h3 class="seremon-title">Ife Nla</h3>
+											<div class="seremon-meta">
+												<audio controls preload="metadata"> 
+												  <source src="/songs/track3.MP3">
+												</audio>											
+												<div class="pastor"><a href="/songs/track3.MP3" download="Ife Nla"><i class="fa fa-download"></i>Download</a></div>
+											</div>
+										</div>
+									</li>
+							</ul>
+
+<!-- 								<div class="text-center">
+									<a href="#" class="button">See all songs</a>
+								</div> -->
+							</div>
+						</div> <!-- .row -->
+						<div class="row">
+						<h2 class="section-title">Videos</h2>
+							<div class="col-md-3">
+								 <iframe width="400" height="310" src="https://www.youtube.com/embed/-P0OS0jdZyw" allowfullscreen></iframe>
+							</div>
+						</div>
+
+					</div> <!-- .container -->
+					<br>
+				</div> <!-- section -->
+			</main> <!-- .main-content -->

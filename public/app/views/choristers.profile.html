@@ -1,0 +1,53 @@
+<style type="text/css">
+			.profile-circle {
+			width: 250px;
+			height: 250px;
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center center;
+			-webkit-border-radius: 99em;
+			-moz-border-radius: 99em;
+			border-radius: 99em;
+			border: 1px solid #eee;
+			vertical-align: middle;
+			transition: width 0.5s ease, height 0.5s ease;
+			}
+
+		.profile-circle:hover {
+			width: 300px;
+			height: 300px;
+			-webkit-border-radius: 99em;
+			-moz-border-radius: 99em;
+			border-radius: 99em;
+			border: 5px solid #eee;
+			vertical-align: middle;
+			}
+
+			.personal-profile h4{
+				color: #947A2F;
+				font-family: 'Zilla Slab', serif;
+			}
+
+			span.info{
+				font-size: 125%;
+			}
+		</style>
+
+<link href="https://fonts.googleapis.com/css?family=Zilla+Slab" rel="stylesheet">
+			<div class="col-md-6 personal-profile" id="profile">
+				<h4>Name : <span class="info">{{chorister.FirstName}} {{chorister.MiddleName}} {{chorister.LastName}}</span></h4>
+				<h4>Birthday : <span class="info">{{chorister.DOB}}</span></h4>
+				<h4>Part : <span class="info">{{chorister.Part}}</span> </h4>
+				<h4>State-of-Origin : <span class="info">{{chorister.State}}</span></h4>
+				<h4>LGA : <span class="info">{{chorister.LGA}}</span></h4>
+				<h4>Hobbies : <span class="info">{{chorister.Hobbies}}</span></h4>
+				<br>
+				<!-- <p>Brief autobiography</p> -->
+			</div>
+			<div class="col-md-6">
+				<div class="news">
+					<image class="profile-circle" src="{{chorister.imageUrl}}.jpg" alt="{{chorister.FirstName}}"></image>
+				</div>
+			</div>
+
+			

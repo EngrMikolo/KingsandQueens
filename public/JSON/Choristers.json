@@ -1,0 +1,354 @@
+{
+  "members": [
+    {
+    	"id": 1,
+    	"FirstName": "Faith",
+  		"LastName": "ADEFIOYE",
+      "MiddleName":"Morenikeji",
+      "State":"Osun",
+      "LGA":"Ife",
+      "DOB": "July 6",
+  		"Executive": false,
+  		"Status" : "",
+  		"Part" : "Soprano",
+      "imageUrl":"/images/choristers/fatia"
+    },
+
+    {
+    	"id": 2,
+    	"FirstName": "Esther",
+  		"LastName": "ADENEKAN", 
+      "MiddleName":"Ajoke",
+      "State":"Ogun",
+      "LGA":"Ikija",
+      "DOB":"May 12", 		
+  		"Executive": false,
+  		"Status" :"",
+  		"Part" : "Soprano",
+      "imageUrl":"/images/choristers/estheradenekan"
+    },
+
+ 	{
+  		"id": 3,
+  		"FirstName": "Oluwatosin",
+  		"LastName": "AWE",
+      "MiddleName":"Olabisi",
+      "State":"Ondo",
+      "LGA":"Akoko north west", 
+      "DOB":"Febuary 27",		
+  		"Executive": true,
+  		"Status" : "Assistant Choirmistress",
+  		"Part" : "Soprano",
+      "AppearanceOrder": 3,
+      "imageUrl":"/images/choristers/oluwatosin"
+  	},	
+
+    {
+    	"id": 4,  		
+  		"FirstName": "Faith",
+  		"LastName": "JEGEDE",
+      "MiddleName":"Ayomide",
+      "State":"Ekiti",
+      "LGA":"Oye",
+      "DOB":"May 20",
+  		"Executive": true,
+  		"Status" : "Assistant Secretary",
+  		"Part" : "Soprano",
+      "Hobbies": "reading, singing and sleeping",
+      "AppearanceOrder": 6,
+      "imageUrl":"/images/choristers/faith"
+    },
+
+    {
+    	"id": 5,
+    	"FirstName": "Abosede",
+  		"LastName": "MOSES", 		
+  		"Executive": true,
+  		"Status" : "Welfare Secretary",
+  		"Part" : "Soprano",
+      "AppearanceOrder": 8,
+      "imageUrl":"/images/choristers/bose"
+    },
+
+    {
+    	"id": 6,
+    	"FirstName": "Esther",
+  		"LastName": "OLATUNDE",
+      "MiddleName":"Ayomide",
+      "State":"Oyo",
+      "LGA":"Ibarapa",
+      "DOB":"April 11",  		
+  		"Executive": false,
+  		"Status" : "",
+  		"Part" : "Soprano",
+      "imageUrl":"/images/choristers/esther"
+    },
+
+    {
+    	"id": 7,
+    	"FirstName": "Olawunmi",
+  		"LastName": "OLUKOYA",		
+  		"Executive": false,
+  		"Status" : "",
+  		"Part" : "Soprano",
+      "imageUrl":"/images/choristers/olawunmi"
+    },
+
+    {
+    	"id": 8,
+    	"FirstName": "Motunrayo",
+  		"LastName": "ADELANI",  		
+  		"Executive": false,
+  		"Status" : "Singer",
+  		"Part" : "Alto",
+      "imageUrl":"/images/choristers/motunrayo"
+    },
+
+
+    {
+    	"id": 9,
+    	"FirstName": "Samuel",
+  		"LastName": "AKINBODE",
+      "MiddleName":"",
+      "State":"Ogun",
+      "LGA":"",
+      "DOB":"July 6", 		
+  		"Executive": false,
+  		"Status" : "",
+  		"Part" : "Alto",
+      "imageUrl":"/images/choristers/samuel"
+    },
+
+
+ 	{
+  		"id": 10,
+  		"FirstName": "Abigail",
+  		"LastName": "AWE",
+      "MiddleName":"Temitope",
+      "State":"Ondo",
+      "LGA":"Akoko North-West",  
+      "DOB":"June 09",		
+  		"Executive": true,
+  		"Status" : "Secretary",
+  		"Part" : "Alto",
+      "AppearanceOrder": 5,
+      "imageUrl":"/images/choristers/omolara"
+  },
+
+    {
+    	"id": 11,
+    	"FirstName": "Ife",
+  		"LastName": "JEGEDE",
+      "MiddleName":"Ayomide",
+      "State":"Ekiti",
+      "LGA":"Oye",
+      "DOB":"",  		
+  		"Executive": false,
+  		"Status" : "",
+  		"Part" : "Alto",
+      "imageUrl":"/images/choristers/ife"
+    },
+
+    {
+    	"id": 12,
+    	"FirstName": "Deborah",
+  		"LastName": "POPOOLA", 		
+  		"Executive": false,
+  		"Status" : "",
+  		"Part" : "Alto",
+      "imageUrl":"/images/choristers/deborah"
+    },
+
+    {
+    	"id": 13,
+    	"FirstName": "Solomon",
+  		"LastName": "ADELANI", 		
+  		"Executive": false,
+  		"Status" : "",
+  		"Part" : "Tenor",
+      "imageUrl":"/images/choristers/solomon"
+    },
+
+
+    {
+    	"id": 14,
+    	"FirstName": "Joshua",
+  		"LastName": "AKERELE",
+      "MiddleName":"Damilare",
+      "State":"Osun",
+      "LGA":"Atakumosa",  
+      "DOB":"December 10",		
+  		"Executive": true,
+  		"Status" : "Librarian",
+  		"Part" : "Tenor",
+      "AppearanceOrder": 7,
+      "imageUrl":"/images/choristers/joshuaa"
+    },
+
+    {
+    	"id": 15,
+    	"FirstName": "Micheal",
+  		"LastName": "KOLAWOLE",
+      "MiddleName":"Ibukunoluwa",
+      "State":"Ogun",
+      "LGA":"Iperu-remo",  
+      "DOB":"November 19",  		
+  		"Executive": true,
+  		"Status" : "Logistician",
+  		"Part" : "Soprano",
+      "Hobbies": "Listening to music and watching football",
+      "AppearanceOrder": 12,
+      "imageUrl":"/images/choristers/mike"
+    },
+
+    {
+    	"id": 16,
+    	"FirstName": "Damilola",
+  		"LastName": "LAWAL",
+      "MiddleName":"Oluwapelumi",
+      "State":"Ogun",
+      "LGA":"Remo",
+      "DOB":"March 29",  		
+  		"Executive": false,
+  		"Status" :"",
+  		"Part" : "Tenor",
+      "imageUrl":"/images/choristers/damilola"
+    },
+
+    {
+    	"id": 17,
+    	"FirstName": "Ayomide",
+  		"LastName": "OMOTOSHO",
+      "MiddleName":"Temidayo",
+      "State":"Ekiti",
+      "LGA":"Ijero", 
+      "DOB":"January 15", 		
+  		"Executive": false,
+  		"Status" : "",
+  		"Part" : "Bass"
+    },
+
+    {
+    	"id": 18,
+    	"FirstName": "Olasunkanmi",
+  		"LastName": "OMOTOSHO",
+      "MiddleName":"Olanrewaju",
+      "State":"Ekiti",
+      "LGA":"Ijero",
+      "DOB":"October 20",  		
+  		"Executive": true,
+  		"Status" : "Financial Secretary",
+  		"Part" : "Tenor",
+      "AppearanceOrder": 10,
+      "imageUrl":"/images/choristers/olasunkanmi"
+    },
+
+  	{
+  		"id": 19,
+  		"FirstName": "Oludayo",
+  		"LastName": "SOBANJO",
+      "MiddleName":"James",	
+      "State": "Ogun",
+      "LGA": "Ijebu North",
+  		"Executive": true,
+  		"Status": "Choirmaster",
+      "DOB":"April 12", 
+  		"Part" : "Tenor",
+      "AppearanceOrder": 1,
+      "imageUrl":"/images/choristers/dayo"
+  	},
+
+    {
+    	"id": 20,
+    	"FirstName": "Tunji",
+  		"LastName": "JEGEDE",  		
+  		"Executive": false,
+  		"Status" : "",
+  		"Part" : "Bass"
+    },
+
+    {
+    	"id": 21,
+    	"FirstName": "Tunde",
+  		"LastName": "KOLAWOLE",
+      "MiddleName":"Samason",
+      "State":"Ogun",
+      "LGA":"Iperu-remo",  
+      "DOB":"",  		
+  		"Executive": false,
+  		"Status" : "",
+  		"Part" : "Bass",
+      "imageUrl":"/images/choristers/tunde"
+    },
+
+  	{
+  		"id": 22,
+  		"FirstName": "Stephen",
+  		"LastName": "OGUNDERO",
+       "MiddleName":"Abimbola",
+      "State":"Ogun",
+      "LGA":"Ikenne",
+      "DOB":"January 12", 		
+  		"Executive": true,
+  		"Status" : "Treasurer",
+  		"Part" : "Bass",
+      "AppearanceOrder": 9,
+      "imageUrl":"/images/choristers/abimbola"
+  	},
+
+  	{
+  		"id": 23,
+  		"FirstName": "Ayodele",
+  		"LastName": "OGUNDERO",
+      "MiddleName":"Emmanuel",
+      "State":"Ogun",
+      "LGA":"Ikenne",
+      "DOB":"Febuary 13",   		
+  		"Executive": true,
+  		"Status" : "Choir Coordinator",
+  		"Part" : "Bass",
+      "AppearanceOrder": 4,
+     "imageUrl":"/images/choristers/ayodele"
+  	},
+
+   	{
+  		"id": 24,
+  		"FirstName": "Micheal",
+  		"LastName": "OGUNDERO",
+      "MiddleName":"Ayodeji",
+      "State":"Ogun",
+      "LGA":"Ikenne",
+       "DOB":"December 10",		
+  		"Executive": true,
+  		"Status" : "Organist",
+  		"Part" : "Tenor",
+      "AppearanceOrder": 2,
+      "imageUrl":"/images/choristers/michealogundero"
+  	},
+
+    {
+    	"id": 25,
+    	"FirstName": "Gabriel",
+  		"LastName": "POPOOLA",
+      "MiddleName":"Olamilekan",
+      "State":"Ogun",
+      "LGA":"",
+      "DOB":"June 2",  		
+  		"Executive": true,
+  		"Status" : "Band Leader",
+  		"Part" : "Bass",
+      "AppearanceOrder": 11,
+      "imageUrl":"/images/choristers/gabrielp"
+    },
+
+    {
+      "id": 26,
+      "FirstName": "Promise",
+      "LastName": "BANWO",      
+      "Executive": false,
+      "Status" : "Singer",
+      "Part" : "Soprano",
+      "imageUrl":"/images/choristers/promise"
+    }
+  ]
+}

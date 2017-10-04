@@ -1,0 +1,308 @@
+<html lang="en" ng-app = "KingsandQueens">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1">
+		<meta name="description" content="kings and queens choir CAC Wonders Camp">
+		
+		<title>KingsandQueens Choir</title>
+
+		<!-- Loading third party fonts -->
+		<link href="fonts/novecento-font/novecento-font.css" rel="stylesheet" type="text/css">
+		<link href="fonts/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+		<!-- Loading main css file -->
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/style.css">
+
+		<link rel="stylesheet" type="text/css" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.1/angular-material.min.css">
+		<!--[if lt IE 9]>
+		<script src="js/ie-support/html5.js"></script>
+		<script src="js/ie-support/respond.js"></script>
+		<![endif]-->
+
+		<script src="js/jquery-1.11.1.min.js"></script>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
+		<script src="js/plugins.js"></script>
+		<script src="js/app.js"></script>
+<!-- <script src="js/FileSaver.min.js"></script>
+<script src="js/Blob.js"></script> -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.js"></script>
+ <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-animate.min.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-aria.min.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-messages.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.1/angular-material.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/angular-material-icons/0.7.1/angular-material-icons.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular-cookies.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2014-11-29/FileSaver.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.3/angular-ui-router.min.js"></script>
+
+<!--Services-->
+<script type="text/javascript" src="app/services/loadDataService.js"></script>
+<script type="text/javascript" src="app/services/utilsService.js"></script>
+
+<!--Controllers-->
+<script type="text/javascript" src="app/controllers/homeCtrl.js"></script>
+<script type="text/javascript" src="app/controllers/galleryCtrl.js"></script>
+<script type="text/javascript" src="app/controllers/historyCtrl.js"></script>
+<script type="text/javascript" src="app/controllers/executiveCtrl.js"></script>
+<script type="text/javascript" src="app/controllers/eventCtrl.js"></script>
+<script type="text/javascript" src="app/controllers/choristersCtrl.js"></script>
+<script type="text/javascript" src="app/controllers/choristers.profileCtrl.js"></script>
+<!-- <script type="text/javascript" src="app/js/sidebar.js"></script> -->
+
+ <!--Directives-->
+<script type="text/javascript" src="app/directives/treeviewDir.js"></script>
+
+<script type="text/javascript" src="app/app.routes.js"></script>
+<script type="text/javascript" src="app/app.js"></script>
+		
+<style>
+.dropbtn {
+    /*background-color: #4CAF50;*/
+    color: white;
+/*    padding: 16px;
+    font-size: 16px;*/
+    border: none;
+    cursor: pointer;
+}
+
+.pointer{
+	cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    /*color: #8f7655;*/
+    min-width: 160px;
+}
+
+.dropdown-content a {
+    /*color: black;*/
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 14px !important;
+    /*color: #8f7655;*/
+}
+
+.dropdown-content a {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.menu li>a {text-decoration: none;}
+
+input#send_email:hover{
+	background: #cf2b10;
+}
+
+.no-js #loader { display: none;  }
+.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+.se-pre-con {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: url(images/loader-64x/Preloader_11.gif) center no-repeat #fff;
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+
+
+</style>
+
+<link href="https://fonts.googleapis.com/css?family=Lemon" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-104144843-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+	</head>
+
+
+	<body>
+	<div class="se-pre-con"></div>
+		<div class="site-content" ng-controller="HomeController">
+			<header class="site-header">
+				<div class="container">
+
+					<div class="main-navigation">
+						<button class="menu-toggle pull-left"><i class="fa fa-bars fa-2x"></i></button>
+					   
+					<a href="#" class="branding">
+						<img height="90px" src="images/logo.jpg" alt="" class="logo">
+					<!-- 	<h1 class="site-title">True Church</h1> -->
+					</a>
+
+						<ul class="menu">
+							<li class="menu-item current-menu-item"><a ui-sref="home">Home<!-- <small>Lorem ipsum</small> --></a></li>
+
+							<div class="dropdown">
+							<li class="menu-item dropbtn"><a href="#">Meet us<span class="caret"></span> <!-- <small>Cupidatat non proident</small> --></a>
+							</li>
+								<div class="dropdown-content">
+		    							<li class="menu-item"><a href="#executives" onclick="slideToChoirExecutives()">CHOIR EXECUTIVES</a></li>
+		    							 <li class="divider"></li>
+		    							<li class="menu-item"><a ui-sref="choristers">CHORISTERS</a></li>
+		   								 <li class="menu-item"><a href="#">BOARD OF TRUSTEES</a></li>
+		  						</div>
+							</div>
+
+							<li class="menu-item"><a ui-sref="gallery">Gallery<!-- <small>Laboris nisi aliquip</small> --></a></li>
+						
+							<li class="menu-item"><a ui-sref="history">History<!--  <small>Aute irure</small> --></a></li>
+							<li class="menu-item pointer"><a onclick="slideDown()" id="btn-contact-us">contact us<!-- <small>lorem ipsum</small> --></a></li>
+						</ul>
+					</div>
+ <div class="mobile-navigation pull-left"></div>
+					
+				</div>
+			</header> <!-- .site-header -->
+
+			<div ui-view></div>
+
+			<footer class="site-footer" id="contact">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-4">
+							<div class="widget">
+								<h3 class="widget-title">Our address</h3>
+								<p>Contact us and also meeet us on our social media platforms.</p>
+								<ul class="address">
+									<li><i class="fa fa-map-marker"></i> 27, Araromi Street, Behind Ola Market, Ehinga-Itire, Surulere, Lagos State, Nigeria.</li>
+									<li><i class="fa fa-phone"></i> +234 8090983086 - <span style="font-size: 13px">Dayo</span></li>
+									<li><i class="fa fa-phone"></i> +234 8172535234 - <span style="font-size: 13px">Micheal</span></li>
+									<li><a href="mailto:kingsandqueenschoir.info@gmail.com" style="color: inherit;"><i class="fa fa-envelope"></i> kingsandqueenschoir.info@gmail.com</a></li>
+									<li><a href="http://www.instagram.com/kingsandqueens_choir" style="color: inherit;" target="blank"><i class="fa fa-instagram"></i> @kingsandqueens_choir</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="widget">
+								<!-- <h3 class="widget-title">Topics from last meeting</h3>
+								<ul class="bullet">
+									<li><a href="#">Lorem ipsum dolor sit amet</a></li>
+									<li><a href="#">Consectetur adipisicing elit quis nostrud</a></li>
+									<li><a href="#">Eiusmod tempor incididunt ut labore et dolore magna</a></li> 
+									<li><a href="#">Ut enim ad minim veniam cillum</a></li>
+									<li><a href="#">Exercitation ullamco laboris nisi ut aliquip</a></li> 
+									<li><a href="#">Duis aute irure dolor in reprehenderit in voluptate</a></li>
+								</ul> -->
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="widget">
+								<h3 class="widget-title">Contact form</h3>
+								<form class="contact-form" name="contactForm" ng-submit="submitForm()" novalidate>
+									<div class="row">
+										<div class="col-md-6"><input id="sender_name" type="text" name="name" placeholder="Your name..." ng-model="sender.name" required="True">
+											<!-- <p ng-show="userForm.name.$invalid && !contactForm.name.$pristine" class="help-block">You name is required.</p> -->
+										</div>
+
+										<div class="col-md-6"><input id="sender_email" type="email" name="email" placeholder="Your Email address" required="True" ng-model="sender.email">
+											<!-- <p ng-show="contactForm.email.$invalid && !userForm.email.$pristine" class="help-block">Enter a valid email.</p> -->
+										</div>
+									</div>
+									<div>
+										<textarea id="content" name="message" placeholder="Your message..." required="True" ng-model="message"></textarea>
+										<p style="color: green" ng-show="isEmailSent" class="help-block">Your Message has been delivered</p>
+									</div>
+									<div class="text-right"><button type="submit" class="btn btn-primary" ng-disabled="contactForm.$invalid">Send Message</button></div>
+									<span id="message"></span>
+								</form>
+							</div>
+							<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+						</div>
+					</div> <!-- .row -->
+
+					<p class="colophon">Copyright 2017 CAC Wonders-Camp. All rights reserved</p>
+					<p>Best viewed with Chrome</p>
+				</div><!-- .container -->
+			</footer> <!-- .site-footer -->
+
+		</div>
+		
+<script>
+	$(window).load(function() {
+		// Animate loader off screen
+		$(".se-pre-con").fadeOut("slow");
+	});
+
+		// Sliding function for Contact link
+    var slideDown = function(){
+		var WH = $(window).height();
+		var SH = $('body').prop("scrollHeight");
+		$('html, body').stop().animate({scrollTop: SH-WH}, 1000);
+	}
+
+
+	var slideToChoirExecutives = function (){
+      window.setTimeout(
+        function(){ 
+            $('html, body').animate({
+            scrollTop: $('#executives').offset().top
+            }, 'fast');
+        },1000);
+
+}
+
+
+
+      // When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+
+</script>
+
+	</body>
+
+</html>

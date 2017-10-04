@@ -1,0 +1,19 @@
+{
+  "name": "kingsandqueens",
+  "version": "1.0.0",
+  "description": "kings and queens website",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ogundero Micheal",
+  "license": "ISC",
+  "dependencies": {
+    "angular-file-saver": "^1.1.2",
+    "body-parser": "^1.15.2",
+    "commander": "^2.9.0",
+    "content-disposition": "^0.5.1",
+    "express": "^4.14.0",
+    "nodemailer": "^0.7.1"
+  }
+}
