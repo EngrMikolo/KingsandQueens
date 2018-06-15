@@ -1215,7 +1215,7 @@ form input[type="submit"], form button, form input[type="reset"] {
   .carousel-inner > .item > a > img {
       width: 90%;
       margin: auto;
-      height:500px;
+      /*height:500px;*/
   }
 
 .hero {
