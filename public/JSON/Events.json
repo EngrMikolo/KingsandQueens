@@ -3,18 +3,10 @@
     {
     	"id": "1",
     	"title": "CHOIR ANNIVERSARY",
-  		"date": "30, July 2017",		
-  		"time": "12:00 NOON",
+  		"date": "29, July 2018",		
+  		"time": "4:00PM",
   		"venue" : "CHURCH AUDITORIUM",
-  		"details" : "2017 Festival of songs and 33rd choir anniversary celebration. Featuring: Hymns, Worship, Chants, Oratorios, Nigerian Classical Anthems, Voice solos, Instrumental solos, Orchestra performance and many more."
-    },
-    {
-      "id": "2",
-      "title": "MUSIC THEORY CLASS",
-      "date": "August 2017",    
-      "time": "",
-      "venue" : "CHURCH AUDITORIUM",
-      "details" : "This is a free music theory class organized by the choir to train young ones who are willing to be enrolled in the church choir. It is also opened to non-church members that are interested. At the end of the program, students should be able to sight-read and sight-sing effectively"
-    } 
+  		"details" : "2018 Festival of songs and 33rd choir anniversary celebration. Featuring: Hymns, Worship, Chants, Oratorios, Nigerian Classical Anthems, Voice solos, Instrumental solos, Orchestra performance and many more."
+    }
   ]
 }
